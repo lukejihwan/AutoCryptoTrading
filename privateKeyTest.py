@@ -17,3 +17,12 @@ for ticker in pybithumb.get_tickers():
 order = bithumb.buy_limit_order('BTC', 130000000, 0.001)
 print(order)
 
+# 지정가 매도하는 법
+sell = bithumb.buy_limit_order('BTC', 3000000, 0.001)
+print(sell)
+
+# 지정가 매수 취소하는 법
+time.sleep(10)
+cancel = bithumb.cancel_order(order)
+print(cancel)
+
