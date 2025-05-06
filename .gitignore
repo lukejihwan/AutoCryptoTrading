@@ -1,3 +1,4 @@
 # 무시할 파일들
 .idea
 .env
+*.xlsx
